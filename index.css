@@ -1,0 +1,53 @@
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(160, 158, 160);
+}
+.nav-logo>img{
+    height: 100px;
+    width: 150px;
+}
+.nav-items > .nav-comp >ul{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-comp >ul > li{
+    padding: 20px;
+    list-style-type: none;
+}
+.Body{
+    margin-top: 20px;
+    height: 300px;
+    width: 100%;
+    
+    
+}
+.Body-img > img{
+    height:170px;
+    width: 190px;
+    padding-right: 5px;
+    padding-left: 8px;
+    
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: auto;
+    
+    
+  }
+  
+  /* Added styling for the individual Restaurant component */
+.reasturants {
+    padding: 10px;
+    background-color: #d0cccc;
+    margin: 10px;
+    border-radius: 25px;
+    width: 230px;
+}
+
+.reasturants:hover{
+    cursor: pointer;
+    border: 1px solid blueviolet;
+}

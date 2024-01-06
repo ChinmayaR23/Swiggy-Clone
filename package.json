@@ -4,13 +4,15 @@
   "description": "",
   "main": "App.js",
   "scripts": {
+    "start": "parcel index.html",
+    "build":"parcel build index.html",
     "test": "jest"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ChinmayaR23/React_practice.git"
   },
-  "keywords": [
+  "keywords": [ 
     "react"
   ],
   "author": "Chinmaya R",
