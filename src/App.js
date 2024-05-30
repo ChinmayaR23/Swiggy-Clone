@@ -6,7 +6,7 @@ import Layout from "./components/Layout";
 import Body from "./components/Body";
 import About from "./components/About";
 import Cont from "./components/Contact";
-
+import Cart from "./components/cart"
 const App = () => {
   return (
     <div className="App-compo">
@@ -32,6 +32,10 @@ const appRouter = createBrowserRouter([
         path: "/contact",
         element: <Cont />,
       },
+      {
+        path: "/cart",
+        element:<Cart/>
+      }
     ],
   },
 ]);

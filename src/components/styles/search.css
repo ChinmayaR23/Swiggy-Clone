@@ -1,0 +1,81 @@
+/* Body.css */
+
+.Body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .search-input {
+    padding: 10px;
+    width: 300px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: border-color 0.3s;
+  }
+  
+  .search-input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .search-btn, .reset-btn, .flt-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .search-btn {
+    background-color: #28a745;
+    color: white;
+    margin-right: 10px;
+  }
+  
+  .search-btn:hover {
+    background-color: #218838;
+  }
+  
+  .reset-btn {
+    background-color: #ffc107;
+    color: white;
+  }
+  
+  .reset-btn:hover {
+    background-color: #e0a800;
+  }
+  
+  .flt-btn {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .flt-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
