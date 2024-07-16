@@ -1,0 +1,68 @@
+/* General Reset */
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar */
+.nav-items {
+    background: rgb(233, 147, 233);
+    font-family: Calibri, sans-serif;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.nav-logo img {
+    height: 75px;
+    width: 150px;
+}
+
+/* Navigation Links */
+.nav-comp ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-comp ul li {
+    display: inline-block;
+}
+
+.nav-comp ul li a {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding-bottom: 5px;
+}
+
+.nav-comp ul li a:hover {
+    color: #ffcccb;
+    border-bottom: 2px solid #ffcccb;
+}
+
+/* Button Styling */
+.nav-comp button {
+    background-color: black;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-comp button:hover {
+    background-color: #333;
+}
