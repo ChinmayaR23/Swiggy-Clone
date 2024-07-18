@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 export const RESTAURANT_LIST_DESKTOP = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=23.369726076519406&lng=85.33414583862306&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
 
 export const RESTAURANT_IMG_CDN = 'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/';
@@ -8,11 +7,9 @@ export const MENU_API = `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_M
 
 
 export const RESTAURANT_LIST_MOBILE = "https://www.swiggy.com/mapi/homepage/getCards?lat=23.369726076519406&lng=85.33414583862306";
-=======
 
 import image from "./CR FOODS.png"
 
 
 export const LOGO_URL = image;
 export const IMG_SRC = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660";
->>>>>>> parent of 65ef361 (Delete src directory)
