@@ -14,7 +14,7 @@ const Hero = () => {
           <div className="py-8 mx-auto flex flex-col justify-start items-start lg:flex-row lg:justify-between lg:items-center">
             <div className="text-start sm:max-w-md space-y-4">
               <h1 className="text-5xl lg:text-6xl font-bold text-white">
-                Food delivery in Ranchi
+                Food delivery in Bangalore
               </h1>
               <p className="text-white lg:pr-16">
                 CraveBite provides food delivery service all over the city, in
