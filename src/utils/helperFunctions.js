@@ -24,10 +24,21 @@ export const sortByCost = (restaurantList) => {
     return result;
 }
 
+
+
+// I modified this function because it was sorting rating by ascending order
+// export const sortByRating = (restaurantList) => {
+//     const data = [...restaurantList];
+//     const result = data.sort(
+//       (item1, item2) => item1?.info?.avgRating - item2?.info?.avgRating
+//     );
+//     return result;
+//   };
+
 export const sortByRating = (restaurantList) => {
-    const data = [...restaurantList];
-    const result = data.sort(
-      (item1, item2) => item1?.info?.avgRating - item2?.info?.avgRating
-    );
-    return result;
-  };
+  const data = [...restaurantList];
+  const result = data.sort(
+    (item1, item2) => item2?.info?.avgRating - item1?.info?.avgRating 
+  );
+  return result;
+};

@@ -7,25 +7,37 @@ import RestaurantMenu from "./pages/RestaurantMenu";
 import { Provider } from "react-redux";
 import store from "./utils/store";
 import CartPage from "./pages/CartPage";
+import Login from "./components/Login";
+import Signup from "./components/Signup"; // Make sure this import path is correct
 
 const router = createBrowserRouter([
   {
     path: "/",
+    element: <Login />,
+    errorElement: <Error />,
+  },
+  {
+    path: "/signup",
+    element: <Signup />,
+    errorElement: <Error />
+  },
+  {
+    path: "/home",
     element: <Main />,
     errorElement: <Error />,
     children: [
       {
-        path: "/",
+        path: "/home",
         element: <Index />,
         errorElement: <Error />,
       },
       {
-        path: "/restaurants/:id",
+        path: "/home/restaurants/:id",
         element: <RestaurantMenu />,
       },
       {
-        path : "/cart",
-        element : <CartPage />
+        path: "/home/cart",
+        element: <CartPage />,
       }
     ],
   },

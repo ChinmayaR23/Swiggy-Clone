@@ -13,7 +13,12 @@ const Header = () => {
   return (
     <div className="fixed px-3 lg:px-8 h-16 top-0 left-0 right-0 flex justify-between items-center bg-black z-50">
       <div className="h-full py-3 lg:py-2 ">
-        <Link to={"/"}>
+
+        {/* On clicking CraveBite logo, it does not send the user to the login page
+          previously was
+          <Link to={"/"}>
+        */}
+        <Link to={"/home"}>
           <img className="w-full h-full" src={logo} loading="lazy" />
         </Link>
       </div>

@@ -13,7 +13,7 @@ const EmptyCart = () => {
             <h1 className='text-base text-slate-700 font-semibold'>Your cart is empty</h1>
             <p className='text-sm text-slate-400'>You can go to homepage to view more restaurants</p>
             <button className='bg-orange-500 py-2 px-6'>
-              <Link to={"/"}>
+              <Link to={"/home"}>
                 <span className='text-white font-bold text-sm'>BROWSE RESTAURANTS</span>
               </Link>
 

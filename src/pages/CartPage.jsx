@@ -12,7 +12,9 @@ const CartPage = () => {
   const items = useSelector((store) => store.cart.items);
   const totalAmount = useSelector((store) => store.cart.total);
 
-
+const btnhandler = ()=>{
+  
+}
   return (
     <div className="relative h-full">
       {
@@ -83,7 +85,7 @@ const CartPage = () => {
 
                   <tr>
                     <td colSpan={3} className="text-center px-3 pt-3">
-                      <button className="bg-orange-500 w-full py-2"><a className="text-sm font-bold text-white text-center">PROCEED TO CHECKOUT</a></button>
+                      <button className="bg-orange-500 w-full py-2"><a className="text-sm font-bold text-white text-center" onClick={btnhandler}>PROCEED TO CHECKOUT</a></button>
 
                     </td>
                   </tr>
