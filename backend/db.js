@@ -1,13 +1,15 @@
-const mongoose= require("mongoose");
-// If you want to change the db to cloud change the url string below
-const mongoUri = "mongodb://localhost:27017/swiggy-clone"
+const mongoose = require("mongoose");
 
-const connectToMongo = ()=>{
+// Replace this with your actual MongoDB Atlas connection string
+const mongoUri = "mongodb+srv://AaronSaldanha:cP7rHzKAuAsJc%2A5@swiggy-clone-backend.cnfwg.mongodb.net/swiggy-clone?retryWrites=true&w=majority";
+
+const connectToMongo = () => {
     mongoose.connect(mongoUri, {
-      ssl: false, // Assuming you're running MongoDB locally and do not need SSL
-      // Note: Remove `tlsInsecure` for production and use proper SSL configuration if needed.
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
     })
-    .then(() => console.log("Connected to MongoDB"))
+    .then(() => console.log("Connected to MongoDB Atlas"))
     .catch((e) => console.log("MongoDB connection error:", e.message));
-}
+};
+
 module.exports = connectToMongo;
