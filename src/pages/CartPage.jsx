@@ -13,7 +13,7 @@ const CartPage = () => {
   const totalAmount = useSelector((store) => store.cart.total);
 
 const btnhandler = ()=>{
-  
+  alert("Order has been recieved and will be pushed into the database")
 }
   return (
     <div className="relative h-full">
