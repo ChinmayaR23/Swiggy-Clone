@@ -1,17 +1,24 @@
-# Stage 2: Set up the backend (Express.js)
+# Stage 1: Install dependencies
 FROM node:18-alpine AS build-backend
 
+# Set working directory
 WORKDIR /app
 
-# Copy the backend package.json and install dependencies
-COPY ./package.json ./package-lock.json ./
-RUN npm install
+# Copy package files and install dependencies
+COPY package.json package-lock.json ./
+RUN npm install --only=dev
 
-# Copy the backend code
-COPY ./ ./ 
+# Copy the entire backend code
+COPY . .
 
 # Expose the port the backend will run on
 EXPOSE 5000
 
-# Start the backend server
-CMD ["nodemon", "index.js"]
+# Use nodemon for development and node for production
+# Uncomment the line depending on your environment
+
+# Development (using nodemon for hot reload)
+# CMD ["npx", "nodemon", "index.js"]
+
+# Production (using node directly)
+CMD ["node", "index.js"]
