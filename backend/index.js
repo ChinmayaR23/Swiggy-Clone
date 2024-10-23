@@ -1,21 +1,30 @@
-const connectToMongo = require('./db')
-const express = require('express')
-var cors = require('cors')
-
+const connectToMongo = require('./db');
+const express = require('express');
+const cors = require('cors');
 
 connectToMongo();
 
-const app = express()
-const port = 5000
+const app = express();
+const port = 5000;
 
-app.use(cors())
+// CORS Configuration with Explicit Options
+const corsOptions = {
+  origin: 'http://localhost:5173', 
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], 
+  allowedHeaders: ['Content-Type', 'Authorization'], 
+  credentials: true, 
+  optionsSuccessStatus: 204 
+};
+
+app.use(cors(corsOptions));
+
 app.use(express.json());
 
+app.options('*', cors(corsOptions)); 
 
-// Availible routes
-app.use('/api/auth', require('./routes/auth'))
+app.use('/api/auth', require('./routes/auth'));
 
-
+// Start the server
 app.listen(port, () => {
-  console.log(`swiggy-clone backend listening on port ${port}`)
-})
+  console.log(`swiggy-clone backend listening on port ${port}`);
+});
